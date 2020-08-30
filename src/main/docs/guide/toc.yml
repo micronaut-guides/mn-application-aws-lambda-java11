@@ -1,0 +1,17 @@
+gettingStarted: 
+  title: Getting Started
+  requirements: What you will need
+  solution: Solution
+writingTheApp:
+  title: Writing the App
+  code: Code
+lambda:
+  title: Lambda
+  createfunction: Create Function
+  uploadcode: Upload Code
+  handler: Handler
+  test: Test
+nextSteps:
+  title: Next Steps
+help:
+  title: Help with Micronaut  

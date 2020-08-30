@@ -1,0 +1,48 @@
+The generated application contains a `BookController`. It responds to POST request to `/`.
+
+[source,java]
+.src/main/java/example/micronaut/BookController.java
+----
+include::{sourceDir}/src/main/java/example/micronaut/BookController.java[]
+----
+
+<1> The class is defined as a controller with the `@Controller` annotation mapped to the path /
+<2> The `@Post` annotation is used to map HTTP request to `/` to the the `save` method.
+<3> Add the `@Valid` annotation to any method parameter's object which requires validation.
+
+The controller's method parameter is a `Book` object:
+
+[source,java]
+.src/main/java/example/micronaut/Book.java
+----
+include::{sourceDir}/src/main/java/example/micronaut/Book.java[]
+----
+
+<1> Annotate the class with `@Introspected` to generate the Bean Metainformation at compile time.
+<2> `name` is required
+<3> Add a nullability annotation to help with Kotlin interoperability and help the IDE.
+
+It returns a `BookSaved` object:
+
+[source,java]
+.src/main/java/example/micronaut/BookSaved.java
+----
+include::{sourceDir}/src/main/java/example/micronaut/BookSaved.java[]
+----
+
+<1> Annotate the class with `@Introspected` to generate the Bean Metainformation at compile time.
+<2> `name` and `isbn` are required
+<3> Add a nullability annotation to help with Kotlin interoperability and help the IDE.
+
+
+The generated tests illustrates how the code works when the lambda gets invoked:
+
+[source,java]
+.src/test/java/example/micronaut/BookControllerTest.java
+----
+include::{sourceDir}/src/test/java/example/micronaut/BookControllerTest.java[]
+----
+
+<1> When you instantiate the Handler, the application context starts.
+<2> Remember to close your application context when you end your test. You can use your handler to obtain it.
+<3> You don't invoke the controller directly. Instead, your handler receives a AWS Proxy Request event which it is routed transparently to your controller.

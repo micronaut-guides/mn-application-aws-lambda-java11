@@ -1,0 +1,4 @@
+Generate a FAT JAR of your app with `./gradlew shadowJar` and upload it.
+
+image:upload-function-code.png[]
+

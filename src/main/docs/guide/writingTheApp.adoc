@@ -1,0 +1,10 @@
+Create a micronaut application with the `aws-lambda` feature using the CLI:
+
+[source,bash]
+----
+% mn create-app example.micronaut.complete --features=aws-lambda
+----
+
+or use https://launch.micronaut.io[Micronaut Launch]
+
+image::launch.png[]

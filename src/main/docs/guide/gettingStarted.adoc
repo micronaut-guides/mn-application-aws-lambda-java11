@@ -1,0 +1,3 @@
+Please, read about https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html#lambda[Micronaut AWS Lambda Support] to learn more about different Lambda runtime, Triggers and Handlers and how to integrate with a Micronaut application.
+
+In this guide, we are going to deploy a Micronaut Application to AWS Lambda. If your Lambda integrates with https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html[API Gateway via a Lambda Proxy], a Micronaut function of type `Application` with the `aws-lambda` feature is a good fit. Specially, when you have multiple endpoints which you wish to delegate to a single Lambda.

@@ -1,0 +1,5 @@
+As Handler, set:
+
+`io.micronaut.function.aws.proxy.MicronautLambdaHandler`
+
+image::handler.png[]
