@@ -1,4 +1,4 @@
-# Microservices distributed tracing with Jaeger and Micronaut #
+# Deploy a Micronaut application to AWS Lambda Java 11 Runtime
 
-Guide: http://guides.micronaut.io/micronaut-microservices-distributed-tracing-jaeger/guide/index.html
+Guide: http://guides.micronaut.io/mn-application-aws-lambda-java11/guide/index.html
 
