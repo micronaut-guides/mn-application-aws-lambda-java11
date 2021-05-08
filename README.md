@@ -1,4 +1,6 @@
-# Deploy a Micronaut application to AWS Lambda Java 11 Runtime
+# This guide has been deprecated and moved to https://github.com/micronaut-projects/micronaut-guides-poc. Please open any issue or pull request in that repository.
 
-Guide: http://guides.micronaut.io/mn-application-aws-lambda-java11/guide/index.html
+Old Guide: 
+
+https://micronaut-projects.github.io/micronaut-guides-old/mn-application-aws-lambda-java11/guide/index.html
 
